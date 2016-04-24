@@ -56,8 +56,8 @@ grails:
             proxies: false
 info:
     app:
-        name: 'qotd'
-        version: '0.1'
+        name: 'se441-qotd'
+        version: '1.0.0-SNAPSHOT'
         grailsVersion: '3.1.4'
 spring:
 
