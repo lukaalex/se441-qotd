@@ -10,6 +10,7 @@ buildscript {
         classpath "org.grails:grails-gradle-plugin:$grailsVersion"
         classpath "com.bertramlabs.plugins:asset-pipeline-gradle:2.5.0"
         classpath "org.grails.plugins:hibernate4:5.0.2"
+        classpath "org.grails.plugins:database-migration:2.0.0.RC4"
     }
 }
 
@@ -57,12 +58,12 @@ dependencies {
     profile "org.grails.profiles:web:3.1.4"
     runtime "org.grails.plugins:asset-pipeline"
     runtime "com.h2database:h2"
-    runtime "org.grails.plugins:database-migration:2.0.0.RC4"
     testCompile "org.grails:grails-plugin-testing"
     testCompile "org.grails.plugins:geb"
     testRuntime "org.seleniumhq.selenium:selenium-htmlunit-driver:2.47.1"
     testRuntime "net.sourceforge.htmlunit:htmlunit:2.18"
-    classpath "org.grails.plugins:database-migration:2.0.0.RC4"
+    runtime "org.grails.plugins:database-migration:2.0.0.RC4"
+    
 }
 
 task wrapper(type: Wrapper) {
@@ -89,7 +90,7 @@ uploadArchives {
             }
         }
     }
-
+}
 sourceSets {
     main {
         resources {
@@ -97,4 +98,3 @@ sourceSets {
         }
     }
 } 
-}
