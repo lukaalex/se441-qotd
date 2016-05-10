@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">5</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">2.597s</div>
+<div class="counter">2.729s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">28%</div>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,91 +61,10 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Failed tests</a>
-</li>
-<li>
-<a href="#tab1">Tests</a>
+<a href="#tab0">Tests</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
-<h2>Failed tests</h2>
-<div class="test">
-<a name="Test that the delete action deletes an instance if it exists"></a>
-<h3 class="failures">Test that the delete action deletes an instance if it exists</h3>
-<span class="code">
-<pre>Condition not satisfied:
-
-false
-
-TODO: Provide a populateValidParams() implementation for this generated test suite
-
-	at qotd.AttributionControllerSpec.populateValidParams(AttributionControllerSpec.groovy:16)
-	at qotd.AttributionControllerSpec.Test that the delete action deletes an instance if it exists(AttributionControllerSpec.groovy:139)
-</pre>
-</span>
-</div>
-<div class="test">
-<a name="Test that the edit action returns the correct model"></a>
-<h3 class="failures">Test that the edit action returns the correct model</h3>
-<span class="code">
-<pre>Condition not satisfied:
-
-false
-
-TODO: Provide a populateValidParams() implementation for this generated test suite
-
-	at qotd.AttributionControllerSpec.populateValidParams(AttributionControllerSpec.groovy:16)
-	at qotd.AttributionControllerSpec.Test that the edit action returns the correct model(AttributionControllerSpec.groovy:87)
-</pre>
-</span>
-</div>
-<div class="test">
-<a name="Test that the show action returns the correct model"></a>
-<h3 class="failures">Test that the show action returns the correct model</h3>
-<span class="code">
-<pre>Condition not satisfied:
-
-false
-
-TODO: Provide a populateValidParams() implementation for this generated test suite
-
-	at qotd.AttributionControllerSpec.populateValidParams(AttributionControllerSpec.groovy:16)
-	at qotd.AttributionControllerSpec.Test that the show action returns the correct model(AttributionControllerSpec.groovy:71)
-</pre>
-</span>
-</div>
-<div class="test">
-<a name="Test the save action correctly persists an instance"></a>
-<h3 class="failures">Test the save action correctly persists an instance</h3>
-<span class="code">
-<pre>Condition not satisfied:
-
-false
-
-TODO: Provide a populateValidParams() implementation for this generated test suite
-
-	at qotd.AttributionControllerSpec.populateValidParams(AttributionControllerSpec.groovy:16)
-	at qotd.AttributionControllerSpec.Test the save action correctly persists an instance(AttributionControllerSpec.groovy:52)
-</pre>
-</span>
-</div>
-<div class="test">
-<a name="Test the update action performs an update on a valid domain instance"></a>
-<h3 class="failures">Test the update action performs an update on a valid domain instance</h3>
-<span class="code">
-<pre>Condition not satisfied:
-
-false
-
-TODO: Provide a populateValidParams() implementation for this generated test suite
-
-	at qotd.AttributionControllerSpec.populateValidParams(AttributionControllerSpec.groovy:16)
-	at qotd.AttributionControllerSpec.Test the update action performs an update on a valid domain instance(AttributionControllerSpec.groovy:117)
-</pre>
-</span>
-</div>
-</div>
-<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -156,39 +75,39 @@ TODO: Provide a populateValidParams() implementation for this generated test sui
 </tr>
 </thead>
 <tr>
-<td class="failures">Test that the delete action deletes an instance if it exists</td>
-<td>0.009s</td>
-<td class="failures">failed</td>
+<td class="success">Test that the delete action deletes an instance if it exists</td>
+<td>0.019s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">Test that the edit action returns the correct model</td>
-<td>0.007s</td>
-<td class="failures">failed</td>
+<td class="success">Test that the edit action returns the correct model</td>
+<td>0.008s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">Test that the show action returns the correct model</td>
+<td class="success">Test that the show action returns the correct model</td>
 <td>0.010s</td>
-<td class="failures">failed</td>
+<td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Test the create action returns the correct model</td>
-<td>0.060s</td>
+<td>0.061s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Test the index action returns the correct model</td>
-<td>2.385s</td>
+<td>2.452s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">Test the save action correctly persists an instance</td>
-<td>0.043s</td>
-<td class="failures">failed</td>
+<td class="success">Test the save action correctly persists an instance</td>
+<td>0.147s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">Test the update action performs an update on a valid domain instance</td>
-<td>0.083s</td>
-<td class="failures">failed</td>
+<td class="success">Test the update action performs an update on a valid domain instance</td>
+<td>0.032s</td>
+<td class="success">passed</td>
 </tr>
 </table>
 </div>
@@ -200,7 +119,7 @@ TODO: Provide a populateValidParams() implementation for this generated test sui
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 2.9</a> at May 9, 2016 8:14:15 PM</p>
+<a href="http://www.gradle.org">Gradle 2.9</a> at May 9, 2016 9:01:31 PM</p>
 </div>
 </div>
 </body>
