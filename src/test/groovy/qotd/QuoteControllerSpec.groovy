@@ -9,6 +9,7 @@ class QuoteControllerSpec extends Specification {
 
     def populateValidParams(params) {
         assert params != null
+        params["text"] = 'These are the params in Quote Controller'
 
         // TODO: Populate valid properties like...
         //params["name"] = 'someValidName'

@@ -15,8 +15,26 @@ class QuoteSpec extends Specification {
     def cleanup() {
     }
 
-    void "test something"() {
-        expect:"fix me"
-            true == false
+    def "test for valid quote text"() {
+    	when: 'text is empty'
+    	def p = new Quote(text: '')
+
+    	then: 'validation should fail'
+    	!p.validate()
+
+    	// TODO: add new tests for null text (should fail) and
+    	// legal text (should pass)
+
+    	when: 'text is null'
+    	def o = new Quote(text: null)
+
+    	then: 'validation should fail'
+    	!o.validate()
+
+    	when: 'text is legal'
+    	def t = new Quote(text: 'legal')
+
+    	then: 'validation should pass'
+    	t.validate()
     }
 }

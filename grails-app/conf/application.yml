@@ -13,6 +13,10 @@ dataSource:
     username: sa
     password:
 
+features:
+    ShowAttributions:
+        enabled: false
+
 environments:
     development:
         dataSource:
